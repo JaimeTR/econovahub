@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-16T00:00:00Z",
+  "title": "Design System: Econova Hub",
+  "extensions": {
+    "colorMeta": {
+      "clear-sky": {
+        "role": "primary",
+        "displayName": "Clear Sky Blue",
+        "canonical": "#3b82f6",
+        "tonalRamp": ["#172554", "#1e3a8a", "#1e40af", "#1d4ed8", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd"]
+      },
+      "sky-haze": {
+        "role": "secondary",
+        "displayName": "Sky Haze",
+        "canonical": "#dbeafe",
+        "tonalRamp": ["#1d4ed8", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd", "#bfdbfe", "#dbeafe", "#eff6ff"]
+      },
+      "dawn-sky": {
+        "role": "secondary",
+        "displayName": "Dawn Sky",
+        "canonical": "#eff6ff",
+        "tonalRamp": ["#1e40af", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd", "#bfdbfe", "#dbeafe", "#eff6ff"]
+      },
+      "horizon-blue": {
+        "role": "secondary",
+        "displayName": "Horizon Blue",
+        "canonical": "#bfdbfe",
+        "tonalRamp": ["#1e40af", "#2563eb", "#3b82f6", "#60a5fa", "#93c5fd", "#bfdbfe", "#dbeafe", "#eff6ff"]
+      },
+      "midnight-slate": {
+        "role": "neutral",
+        "displayName": "Midnight Slate",
+        "canonical": "#1e293b",
+        "tonalRamp": ["#020617", "#0f172a", "#1e293b", "#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1"]
+      },
+      "overcast-gray": {
+        "role": "neutral",
+        "displayName": "Overcast Gray",
+        "canonical": "#64748b",
+        "tonalRamp": ["#0f172a", "#1e293b", "#334155", "#475569", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0"]
+      },
+      "cloud-white": {
+        "role": "neutral",
+        "displayName": "Cloud White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#cbd5e1", "#e2e8f0", "#f1f5f9", "#f8fafc", "#ffffff", "#ffffff", "#ffffff", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "ONE DAY Display",
+        "purpose": "Hero h1, section h2, logo wordmark, hero CTAs. No accented glyphs — Spanish headlines drop diacritics."
+      },
+      "headline": {
+        "displayName": "ONE DAY Headline",
+        "purpose": "Section headings at clamp(1.875rem, 4vw, 2.25rem), line-height 1.2."
+      },
+      "title": {
+        "displayName": "Poppins Title",
+        "purpose": "Uppercase card titles, nav links, step titles — Poppins 600, 14px, 0.05em tracking."
+      },
+      "body": {
+        "displayName": "Poppins Body",
+        "purpose": "Paragraphs and card descriptions — Poppins 300, 1rem, 1.625 line-height, max ~45ch."
+      },
+      "label": {
+        "displayName": "Poppins Kicker",
+        "purpose": "Section eyebrows and footer headings — Poppins 600, 12-14px, 0.15em tracking, uppercase."
+      }
+    },
+    "shadows": [
+      {
+        "name": "glass-rest",
+        "value": "0 20px 25px -5px rgba(59,130,246,0.10), 0 10px 10px -5px rgba(59,130,246,0.05)",
+        "purpose": "Default tinted shadow under glass cards and floating glass tags."
+      },
+      {
+        "name": "glass-lifted",
+        "value": "0 25px 50px -12px rgba(59,130,246,0.20)",
+        "purpose": "Hover state of interactive cards, paired with an 8px upward lift."
+      },
+      {
+        "name": "cta-glow",
+        "value": "0 20px 25px -5px rgba(59,130,246,0.2), 0 10px 10px -5px rgba(59,130,246,0.05)",
+        "purpose": "Under primary gradient buttons; also the resting layer of the btn-pulse ring."
+      },
+      {
+        "name": "nav-float",
+        "value": "0 10px 15px -3px rgba(59,130,246,0.05)",
+        "purpose": "Whisper shadow beneath the floating glass navbar."
+      },
+      {
+        "name": "deep-ink",
+        "value": "0 25px 50px -12px rgba(0,0,0,0.5)",
+        "purpose": "The only black-strength shadow: the solid-white CTA button on the dark band."
+      }
+    ],
+    "motion": [
+      {
+        "name": "float",
+        "value": "translateY(-10px), 4s ease-in-out infinite",
+        "purpose": "Floating glass tags and small elements in the hero."
+      },
+      {
+        "name": "float-slow",
+        "value": "translateY(-15px) scale(1.05), 6s ease-in-out infinite",
+        "purpose": "Background blobs, hero illustration, section SVGs."
+      },
+      {
+        "name": "tilt-float",
+        "value": "perspective(800px) rotateX(0-2deg) translateY(-8px), 5s ease-in-out infinite",
+        "purpose": "Undraw illustrations that rock gently in 3D."
+      },
+      {
+        "name": "btn-pulse",
+        "value": "box-shadow ring 0->12px rgba(59,130,246,0.4)->0, 2s ease-in-out infinite",
+        "purpose": "Expanding halo ring on the primary CTA. One pulse per viewport."
+      },
+      {
+        "name": "btn-gradient-shift",
+        "value": "background-position 0-100%, 3s ease infinite",
+        "purpose": "Slow drift of the blue->cyan sweep inside primary buttons."
+      },
+      {
+        "name": "gradient-shift",
+        "value": "background-position 0-100%, 8s ease infinite",
+        "purpose": "The fixed page-wide background gradient that breathes behind the glass."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 0->1, translateY(30px)->0, 0.7s ease-out",
+        "purpose": "IntersectionObserver-driven scroll reveal (also left/right variants)."
+      },
+      {
+        "name": "icon-float",
+        "value": "translateY(-6px) scale(1.05), 2s ease-in-out infinite",
+        "purpose": "Gentle bob of step-card icon chips."
+      },
+      {
+        "name": "text-fade-in",
+        "value": "opacity 0->1, translateY(40px) scale(0.95), blur(4px)->0, 0.8s ease-out",
+        "purpose": "Hero headline entrance, staged in 200ms delays."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Gradient Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The signature CTA: animated blue-to-cyan sweep with a pulsing halo ring. Hero and section actions only.",
+      "html": "<button class=\"ds-btn-primary\">Soy creador<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 7l5 5m0 0l-5 5m5-5H6\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 32px; border: none; border-radius: 12px; font-family: 'ONE DAY', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; background: linear-gradient(90deg, #3b82f6, #3b82f6 50%, #06b6d4); background-size: 200% 200%; box-shadow: 0 20px 25px -5px rgba(59,130,246,0.2), 0 10px 10px -5px rgba(59,130,246,0.05); cursor: pointer; animation: ds-btn-pulse 2s ease-in-out infinite, ds-btn-gradient 3s ease infinite; transition: transform 0.3s, filter 0.3s; } .ds-btn-primary:hover { transform: scale(1.02); filter: brightness(1.05); } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; } @keyframes ds-btn-pulse { 0% { box-shadow: 0 0 0 0 rgba(59,130,246,0.4), 0 4px 14px 0 rgba(59,130,246,0.2); } 70% { box-shadow: 0 0 0 12px rgba(59,130,246,0), 0 4px 14px 0 rgba(59,130,246,0.2); } 100% { box-shadow: 0 0 0 0 rgba(59,130,246,0), 0 4px 14px 0 rgba(59,130,246,0.2); } } @keyframes ds-btn-gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }"
+    },
+    {
+      "name": "Secondary Glass Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Frosted ghost partner beside the primary CTA: translucent white, hairline border, midnight-slate text.",
+      "html": "<button class=\"ds-btn-secondary\">Soy cliente<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 8l4 4m0 0l-4 4m4-4H3\"/></svg></button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 32px; border-radius: 12px; background: rgba(255,255,255,0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.4); color: #1e293b; font-family: 'ONE DAY', sans-serif; font-size: 16px; font-weight: 700; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer; transition: background 0.3s, transform 0.3s; } .ds-btn-secondary:hover { background: rgba(255,255,255,0.8); } .ds-btn-secondary:active { transform: scale(0.98); } .ds-btn-secondary:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }"
+    },
+    {
+      "name": "Glass Card",
+      "kind": "card",
+      "refersTo": "card-glass",
+      "description": "The default surface: 50% white with heavy backdrop blur, hairline white border, subtle 3D tilt, tinted blue shadow, 8px hover lift.",
+      "html": "<div class=\"ds-card-glass\"><div class=\"ds-card-icon\">★</div><h3 class=\"ds-card-title\">CREA EN MINUTOS</h3><p class=\"ds-card-body\">Registrate y tu landing page esta lista. Sin programar, sin complicaciones.</p></div>",
+      "css": ".ds-card-glass { background: rgba(255,255,255,0.5); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.3); border-radius: 16px; padding: 28px; text-align: center; box-shadow: 0 20px 25px -5px rgba(59,130,246,0.10), 0 10px 10px -5px rgba(59,130,246,0.05); transform: perspective(800px) rotateX(1deg); transition: transform 0.3s, box-shadow 0.3s; } .ds-card-glass:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(59,130,246,0.20); } .ds-card-icon { width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 16px; background: rgba(59,130,246,0.15); color: #3b82f6; font-size: 24px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); transition: transform 0.5s; } .ds-card-glass:hover .ds-card-icon { transform: scale(1.1) rotate(6deg); } .ds-card-title { font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; color: #1e293b; margin: 0 0 6px; } .ds-card-body { font-family: Poppins, sans-serif; font-weight: 300; font-size: 12px; line-height: 1.625; color: rgba(100,116,139,0.8); margin: 0; }"
+    },
+    {
+      "name": "Feature Mini-Card",
+      "kind": "card",
+      "refersTo": "card-feature",
+      "description": "Compact 2-column feature tile with a gradient-washed icon chip; the grid unit of the creator/client sections.",
+      "html": "<div class=\"ds-card-feature\"><div class=\"ds-chip\">★</div><h4 class=\"ds-card-title\">LANDING PAGE AUTOMATICA</h4><p class=\"ds-card-body\">Al registrarte obtienes una landing personalizada con tu marca.</p></div>",
+      "css": ".ds-card-feature { background: rgba(255,255,255,0.5); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.3); border-radius: 12px; padding: 16px; text-align: center; box-shadow: 0 20px 25px -5px rgba(59,130,246,0.10), 0 10px 10px -5px rgba(59,130,246,0.05); transform: perspective(800px) rotateX(1deg); transition: transform 0.3s, box-shadow 0.3s; } .ds-card-feature:hover { transform: translateY(-6px); box-shadow: 0 25px 50px -12px rgba(59,130,246,0.20); } .ds-chip { width: 48px; height: 48px; margin: 0 auto 12px; border-radius: 16px; background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.2)); display: flex; align-items: center; justify-content: center; color: #3b82f6; font-size: 20px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); transition: transform 0.5s; } .ds-card-feature:hover .ds-chip { transform: scale(1.1) rotate(6deg); } .ds-card-title { font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: #1e293b; margin: 0 0 4px; } .ds-card-body { font-family: Poppins, sans-serif; font-weight: 300; font-size: 11px; line-height: 1.625; color: rgba(100,116,139,0.7); margin: 0; }"
+    },
+    {
+      "name": "Floating Glass Navbar",
+      "kind": "nav",
+      "refersTo": "navbar",
+      "description": "Fixed glass pill at the top of the page: gradient wordmark, uppercase ghost links, mini gradient CTA.",
+      "html": "<nav class=\"ds-navbar\"><a class=\"ds-logo\">EconovaHUB</a><div class=\"ds-nav-links\"><a class=\"ds-navlink\">CREADORES</a><a class=\"ds-navlink\">CLIENTES</a><a class=\"ds-nav-cta\">Crear cuenta</a></div></nav>",
+      "css": ".ds-navbar { position: fixed; top: 12px; left: 16px; right: 16px; margin: 0 auto; max-width: 1280px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 64px; background: rgba(239,246,255,0.6); backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.3); border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(59,130,246,0.05); font-family: Poppins, sans-serif; } .ds-logo { font-family: 'ONE DAY', sans-serif; font-size: 20px; font-weight: 700; background: linear-gradient(90deg, #3b82f6, #3b82f6 50%, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; } .ds-nav-links { display: flex; align-items: center; gap: 4px; } .ds-navlink { padding: 8px 16px; border-radius: 12px; font-size: 14px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05em; color: #1e293b; text-decoration: none; transition: background 0.3s; } .ds-navlink:hover { background: rgba(255,255,255,0.4); } .ds-nav-cta { padding: 8px 16px; border-radius: 12px; background: linear-gradient(90deg, #3b82f6, #06b6d4); color: #ffffff; font-size: 14px; font-weight: 400; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; box-shadow: 0 10px 15px -3px rgba(59,130,246,0.2); transition: opacity 0.3s; } .ds-nav-cta:hover { opacity: 0.9; }"
+    },
+    {
+      "name": "Kicker Pill",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Section eyebrow and hero badge: full-radius sky-haze pill with a pulsing clear-sky status dot.",
+      "html": "<span class=\"ds-pill\"><span class=\"ds-dot\"></span>PLATAFORMA PARA CREADORES DIGITALES</span>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; border-radius: 9999px; background: rgba(219,234,254,0.8); backdrop-filter: blur(8px); border: 1px solid #dbeafe; color: #3b82f6; font-family: Poppins, sans-serif; font-size: 14px; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.05); } .ds-dot { width: 6px; height: 6px; border-radius: 50%; background: #3b82f6; animation: ds-blink 2s ease-in-out infinite; } @keyframes ds-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Solid-white field, 12px radius, gray hairline border that turns clear-sky blue on focus. Used in the FAQ creator-search.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"usuario del creador\" />",
+      "css": ".ds-input { padding: 10px 12px; border-radius: 12px; background: #ffffff; border: 1px solid #e2e8f0; font-family: Poppins, sans-serif; font-size: 14px; color: #1e293b; transition: border-color 0.3s; width: 200px; } .ds-input::placeholder { color: rgba(100,116,139,0.4); } .ds-input:focus { outline: none; border-color: #3b82f6; }"
+    },
+    {
+      "name": "FAQ Accordion",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "Glass details/summary accordion; the open item tints sky-haze with clear-sky text and a rotating chevron.",
+      "html": "<details class=\"ds-faq\" open><summary class=\"ds-faq-summary\">Cuanto cuesta usar Econova Hub?<svg class=\"ds-chevron\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 9l-7 7-7-7\"/></svg></summary><div class=\"ds-faq-body\">La plataforma es gratuita para creadores. Solo pagas las comisiones de tu procesador de pago (Culqi o PayPal).</div></details>",
+      "css": ".ds-faq { border-radius: 12px; overflow: hidden; background: rgba(239,246,255,0.6); backdrop-filter: blur(12px); border: 1px solid #bfdbfe; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-family: Poppins, sans-serif; } .ds-faq:not([open]) { background: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.3); } .ds-faq-summary { list-style: none; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; font-size: 14px; font-weight: 500; color: #1e293b; cursor: pointer; transition: color 0.3s, background 0.3s; } .ds-faq-summary::-webkit-details-marker { display: none; } .ds-faq-summary:hover { background: rgba(255,255,255,0.3); } .ds-faq[open] .ds-faq-summary { color: #3b82f6; } .ds-chevron { color: rgba(100,116,139,0.5); transition: transform 0.3s; } .ds-faq[open] .ds-chevron { transform: rotate(180deg); } .ds-faq-body { padding: 12px 24px 16px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 12px; font-weight: 300; line-height: 1.625; color: rgba(100,116,139,0.8); }"
+    },
+    {
+      "name": "Featured Plan Card",
+      "kind": "card",
+      "refersTo": "card-plan",
+      "description": "Solid-white pricing card crowned with a 2px clear-sky border, gradient badge, and full-width CTA. The 'El mas vendido' plan.",
+      "html": "<div class=\"ds-card-plan\"><span class=\"ds-badge\">El mas vendido</span><h3 class=\"ds-plan-name\">Pro</h3><div class=\"ds-plan-price\"><span>S/</span><strong>17</strong><span>pago unico</span></div><button class=\"ds-plan-btn\">Comprar ahora</button></div>",
+      "css": ".ds-card-plan { position: relative; background: #ffffff; border: 2px solid #3b82f6; border-radius: 16px; padding: 32px; box-shadow: 0 20px 25px -5px rgba(59,130,246,0.15), 0 10px 10px -5px rgba(59,130,246,0.05); transform: scale(1.05); max-width: 384px; font-family: Poppins, sans-serif; } .ds-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); padding: 4px 16px; border-radius: 9999px; background: linear-gradient(90deg, #3b82f6, #06b6d4); color: #ffffff; font-size: 12px; font-weight: 600; white-space: nowrap; } .ds-plan-name { font-size: 20px; font-weight: 700; color: #1e293b; margin: 0 0 8px; } .ds-plan-price { display: flex; align-items: baseline; gap: 6px; margin-bottom: 24px; color: #64748b; font-size: 14px; } .ds-plan-price strong { font-size: 36px; color: #1e293b; } .ds-plan-btn { width: 100%; padding: 14px 0; border: none; border-radius: 12px; background: #3b82f6; color: #ffffff; font-family: Poppins, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: 0 10px 15px -3px rgba(59,130,246,0.25); transition: background 0.3s, transform 0.3s; } .ds-plan-btn:hover { background: rgba(59,130,246,0.9); } .ds-plan-btn:active { transform: scale(0.98); } .ds-plan-btn:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sky Harbor",
+    "overview": "Econova Hub is a marketplace floating in a clear blue sky: glass panels, soft drifting light, and a single vivid blue runway for action. The system pairs a frosted, translucent surface layer (half-transparent white cards, heavy backdrop blur, hairline white borders) with one saturated accent family of sky blues, and reserves its most energetic expression — an animated blue-to-cyan gradient sweep — for the moments that ask creators to act: the logo, the primary CTA, the step badges. Depth here is meteorological, not architectural: blobs of light drift behind the glass, shadows are tinted blue like a reflection on water, and everything rests on pale gradient skies that shift slowly from dawn white to haze blue.\n\nThe type system speaks in two voices: ONE DAY, a confident, slightly playful display face (assumed — no accented glyphs, so Spanish headlines are deliberately written without diacritics), carries every headline, the logo, and the hero CTAs; Poppins in light weights carries all explanation, labels, and interface text. Copy is Spanish-first, with uppercase tracking-widest Poppins kickers above every section. Density is airy: 80–96px section padding, 12–16px radius on every interactive edge, generous internal padding, and cards that hover-lift 8px when you reach for them. This is a system where trust reads as clarity — nothing heavy, nothing opaque, nothing louder than the one blue button.",
+    "keyCharacteristics": [
+      "Frosted glass surfaces (bg-white/50, backdrop-blur-xl, border-white/30) over pale blue skies, never solid fills in light sections",
+      "One saturated accent: a vivid sky blue (#3b82f6) that becomes a 3-stop blue→cyan gradient on action accents",
+      "ONE DAY for display, Poppins Light for body — two voices that never trade places",
+      "Everything drifts: floating blobs, floating glass tags, tilt-float illustrations, a slow-shifting page gradient",
+      "Tinted blue shadows on light surfaces; deep slate (#1e293b) used only for the closing CTA band and footer",
+      "Uppercase, tracking-widest Poppins kickers (text-sm, tracking-widest) above every section heading"
+    ],
+    "rules": [
+      {
+        "name": "The Sky Saturation Rule",
+        "body": "Full-chroma Clear Sky Blue appears only as small fills (pills, chips, badges), button gradients, and text accents — never as a large background field. Large areas are always the pale haze family at 30–60% opacity over white.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Gradient Rule",
+        "body": "The Clear Sky → Cyan sweep is reserved for primary CTAs, the logo wordmark, hero keyword spans, step badges, and icon-chip fills. It never appears on body copy, card backgrounds at rest, or any surface that is not asking for a click.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Accent Rule",
+        "body": "ONE DAY ships no accented glyphs. Spanish headlines set in ONE DAY are written without diacritics — 'mas facil', 'Como funciona'. Never force an accented character into a ONE DAY headline; drop the diacritic instead.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "ONE DAY announces, Poppins explains. Never set body copy or card descriptions in ONE DAY; never set a section h2 or the logo in Poppins.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glass-Over-Shadow Rule",
+        "body": "Depth is frost and glow first: backdrop-blur, translucent white fills, blurred light blobs, tinted blue shadows. Hard, dark shadows are reserved for the dark band — nowhere else.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One-Pulse Rule",
+        "body": "At most one pulsing element per viewport: the hero's primary CTA btn-pulse ring (plus the 2s blinking status dot inside the hero pill). Everything else floats, never pulses.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do build light-section surfaces from frosted glass (bg-white/50, backdrop-blur-xl, border-white/30) — the sky gradient and blobs must show through.",
+      "Do reserve the Clear Sky → Cyan gradient sweep for the logo, primary CTAs, step badges, and hero keyword spans.",
+      "Do set every headline and hero CTA in ONE DAY, and every paragraph, label, and card description in Poppins (body 300, titles 600).",
+      "Do write Spanish ONE DAY headlines without diacritics ('Como funciona', 'mas facil') — the face has no accented glyphs.",
+      "Do kick sections with an uppercase, tracking-widest Poppins label in Clear Sky Blue.",
+      "Do lift interactive cards 8px on hover with the tinted shadow deepening from /10 to /20, and scale primary buttons 1.02→0.98.",
+      "Do keep at most one pulsing element per viewport.",
+      "Do paint the closing CTA and footer Midnight Slate with blurred blue glow orbs and a solid-white CTA button."
+    ],
+    "donts": [
+      "Don't set body copy, card descriptions, or nav links in ONE DAY.",
+      "Don't fill large background areas with saturated blue — large fields stay in the pale haze family at low opacity.",
+      "Don't apply the gradient to body text, card fills, or any surface that isn't an action accent.",
+      "Don't use hard black shadows on light surfaces — shadows are tinted blue at 5–20% opacity.",
+      "Don't add more than one pulsing element (pulse rings, blinking dots) to a single viewport.",
+      "Don't force accented characters into ONE DAY headings — the glyphs do not exist and will render as fallback.",
+      "Don't use solid opaque fills in light sections; only creator-page plan cards, inputs, and the dark band may be opaque."
+    ]
+  }
+}
